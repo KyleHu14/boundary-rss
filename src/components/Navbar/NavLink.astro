@@ -1,0 +1,10 @@
+---
+interface Props {
+	text: string
+	url: string
+}
+
+const { text, url } = Astro.props
+---
+
+<a href={url}>{text}</a>
