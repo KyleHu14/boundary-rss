@@ -1,34 +1,128 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Navbar from "../components/Navbar/Navbar.astro"
+import TitleDescription from "../components/TitleDescription.astro"
 ---
 
 <Layout title="Home">
 	<main class="w-screen h-screen overflow-x-hidden">
 		<!-- Main Home Page 1 -->
 		<div
-			class="w-full h-full bg-[url('/home/home-1.jpg')] bg-cover bg-center text-center font-['Khand'] text-white">
+			class="w-full h-full bg-[url('/home/home-1.jpg')] bg-cover bg-center text-center text-white">
 			<Navbar />
 			<div
-				class="flex flex-col justify-center items-center w-full h-[70%]">
-				<h1 class="text-[5rem] font-bold">Boundary RSS</h1>
-				<p class="mt-[-2rem] text-[3rem] font-light font-['Roboto']">
+				class="flex h-[70%] w-full flex-col items-center justify-center">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Boundary RSS
+				</h1>
+				<p class="mt-[-2rem] font-['Roboto'] text-[3rem] font-light">
 					Revolutionizing Earth’s subsurface data.
 				</p>
 			</div>
 		</div>
 
 		<!-- Our Mission -->
-		<div class="w-full h-full">
-			<div class="">
-				<h1 class="text-[5rem] font-bold">Our Mission</h1>
-				<p class="mt-[-2rem] text-[3rem] font-light font-['Roboto']">
+		<div class="w-full h-full flex">
+			<div
+				class="flex w-[50%] flex-col items-center justify-center text-center px-10">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Our Mission
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
 					Boundary will redefine remote sensing data analytics and
 					revolutionize the way subsurface Earth insights are derived
 					from datasets of all types.
 				</p>
 			</div>
-			<img />
+			<img class="object-cover w-[50%]" src="/home/home-2.jpg" />
+		</div>
+
+		<!-- Our Vision -->
+		<div
+			class="h-full w-full bg-[url('/home/home-3.png')] bg-cover bg-center px-28 pt-40">
+			<!-- Text -->
+			<div class="text-white max-w-[50rem]">
+				<h1 class="font-['Khand'] text-[5rem] font-bold">Our Vision</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					We strive to become the dominant world player in geo spatial
+					data analytics within 5 years where geo spatial data can
+					help us not only develop a more sustainable future not only
+					for the surface but the subsurface as well.
+				</p>
+			</div>
+		</div>
+
+		<!-- What we bring to the table -->
+		<h1 class="text-center font-['Khand'] text-[5rem] font-bold mt-10">
+			What We Bring to the table
+		</h1>
+		<div class="py-20 px-48 flex flex-col gap-16">
+			<!-- Impressive Visualizations -->
+			<div class="flex items-center gap-10">
+				<div class="w-[50%] h-[20rem]">
+					<img
+						class="object-cover w-full h-full"
+						src="/home/home-4.png"
+					/>
+				</div>
+
+				<TitleDescription
+					title="Impressive Visualizations"
+					description="Digital twins and 3D visualizations of your AOI that will provide immersive insights like never before."
+				/>
+			</div>
+
+			<!-- Reliable Partner -->
+			<div class="flex items-center gap-10">
+				<TitleDescription
+					title="A Reliable Partner"
+					description="We are a partner you can rely on no matter the mission or use case we have a unique solution precision molded to fit your needs."
+				/>
+
+				<div class="w-[50%] h-[20rem]">
+					<img
+						class="object-cover w-full h-full"
+						src="/home/home-5.jpg"
+					/>
+				</div>
+			</div>
+
+			<!-- Advance AI Integration -->
+			<div class="flex items-center gap-10">
+				<div class="w-[50%] h-[20rem]">
+					<img
+						class="object-cover w-full h-full"
+						src="/home/home-6.jpg"
+					/>
+				</div>
+
+				<TitleDescription
+					title="Advanced AI Integration"
+					description="Where AI meets subsurface imaging and geo spatial data."
+				/>
+			</div>
+		</div>
+
+		<!-- Where We Are -->
+		<div class="w-full h-full flex bg-black pr-16">
+			<img class="object-cover w-[50%]" src="/home/home-7.jpg" />
+			<div
+				class="flex w-[50%] flex-col justify-center px-10 text-left text-white">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Where We Are
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					We’re currently servicing the state of California and the
+					world's oceans with plans on expanding to the rest of the
+					United States and beyond soon. Check out our core
+					applications and see what resources we have available for
+					you to utilize today.
+				</p>
+				<button
+					class="w-fit bg-zinc-400 font-thin text-2xl font-['Roboto'] p-2 rounded-md"
+					>Learn More</button
+				>
+			</div>
 		</div>
 	</main>
 </Layout>
