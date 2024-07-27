@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar/Navbar.astro"
+import Footer from "../components/Footer/Footer.astro"
+---
+
+<Layout title="Team">
+	<main class="w-screen h-screen">
+		<Navbar />
+
+		<!-- Main Content -->
+		<div class="pt-20 px-96 flex justify-center gap-10">
+			<!-- Form Wrapper -->
+			<div class="flex flex-col w-1/2">
+				<div>
+					<h1 class="font-['Khand'] font-bold text-6xl">
+						Contact Us
+					</h1>
+					<p class="font-['Roboto'] text-2xl font-light">
+						The future of subsurface imaging awaits, we’re excited
+						to connect with you in the future and look forward to
+						each and every message we receive. <br />Email :
+						info@boundaryrss.com
+					</p>
+				</div>
+				<form
+					class="border border-black rounded-md p-5 mt-10 flex flex-col gap-3">
+					<h1 class="font-['Khand'] text-3xl">Contact Form</h1>
+					<div class="flex gap-5">
+						<div class="flex flex-col w-1/2">
+							<label class="font-['Khand'] text-xl">Name</label>
+							<input class="border border-black rounded-md p-2" />
+						</div>
+
+						<div class="flex flex-col w-1/2">
+							<label class="font-['Khand'] text-xl"
+								>Organization Name</label
+							>
+							<input class="border border-black rounded-md p-2" />
+						</div>
+					</div>
+
+					<div class="flex flex-col w-full">
+						<label class="font-['Khand'] text-xl">Email</label>
+						<input class="border border-black rounded-md p-2" />
+					</div>
+
+					<div class="flex gap-5">
+						<div class="flex flex-col w-1/2">
+							<label class="font-['Khand'] text-xl"
+								>Message Category</label
+							>
+							<input class="border border-black rounded-md p-2" />
+						</div>
+
+						<div class="flex flex-col w-1/2">
+							<label class="font-['Khand'] text-xl"
+								>Service Category</label
+							>
+							<input class="border border-black rounded-md p-2" />
+						</div>
+					</div>
+
+					<div class="flex flex-col">
+						<label class="font-['Khand'] text-xl">Message</label>
+						<textarea class="border border-black p-3"></textarea>
+					</div>
+
+					<button
+						class="w-fit rounded-md bg-zinc-800 p-3 font-['Roboto'] text-white text-xl"
+						>Submit</button
+					>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="w-1/2">
+				<img
+					class="object-cover w-full h-full"
+					src="/contact/contact-1.jpg"
+				/>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</Layout>

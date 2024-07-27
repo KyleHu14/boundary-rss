@@ -2,10 +2,11 @@
 import Layout from "../layouts/Layout.astro"
 import Navbar from "../components/Navbar/Navbar.astro"
 import TitleDescription from "../components/TitleDescription.astro"
+import Footer from "../components/Footer/Footer.astro"
 ---
 
 <Layout title="Home">
-	<main class="w-screen h-screen overflow-x-hidden">
+	<main class="w-screen h-screen">
 		<!-- Main Home Page 1 -->
 		<div
 			class="w-full h-full bg-[url('/home/home-1.jpg')] bg-cover bg-center text-center text-white">
@@ -124,6 +125,7 @@ import TitleDescription from "../components/TitleDescription.astro"
 				>
 			</div>
 		</div>
+		<Footer />
 	</main>
 </Layout>
 

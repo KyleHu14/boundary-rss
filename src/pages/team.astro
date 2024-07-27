@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar/Navbar.astro"
+import ValueCard from "../components/ValueCard.astro"
+import Earth from "../components/Icons/Earth.astro"
+import Balance from "../components/Icons/Balance.astro"
+import Leaf from "../components/Icons/Leaf.astro"
+import Footer from "../components/Footer/Footer.astro"
+---
+
+<Layout title="Team">
+	<main class="w-screen h-screen">
+		<!-- Team Page -->
+		<div class="w-full h-full text-center text-black">
+			<Navbar />
+			<div
+				class="flex h-[70%] w-full flex-col items-center justify-center">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">Who We Are</h1>
+				<p class="mt-[-2rem] font-['Roboto'] text-[3rem] font-light">
+					Learn who comprises the Boundary RSS team.
+				</p>
+			</div>
+		</div>
+
+		<!-- Who We Are -->
+		<div class="w-full h-full flex bg-black">
+			<div class="flex w-[50%] flex-col text-left px-20 text-white pt-36">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">We are...</h1>
+				<p class="font-['Roboto'] text-[1.5rem] font-light">
+					a group of 25 developers spread across 5 teams of
+					algorithms, software, mobile application, server
+					development, and data processing.<br /><br /> Our skilled developers,
+					researchers and data scientists are drawn from top universities
+					and organizations across California and the world. We’ve forged
+					unique partnerships with space agencies, academics institutions,
+					and private companies to support our conservation goals.
+				</p>
+			</div>
+			<img class="object-cover w-[50%]" src="/team/team-1.jpg" />
+		</div>
+
+		<!-- What we bring to the table -->
+
+		<div class="py-20 px-48 flex flex-col items-center">
+			<h1
+				class="text-center font-['Khand'] text-[4rem] mt-10 font-semibold">
+				Our Core Values
+			</h1>
+			<!-- Row 1 of Values -->
+			<div class="flex gap-14 mt-14">
+				<ValueCard
+					title="Coexist with Earth"
+					description="The Earth is a resource to be managed not exploited.">
+					<Earth />
+				</ValueCard>
+
+				<ValueCard
+					title="Balance"
+					description="We are committed to balancing extraction and conservation.">
+					<Balance />
+				</ValueCard>
+
+				<ValueCard
+					title="Environmentalists"
+					description="We are an environmentalists first organization.">
+					<Leaf />
+				</ValueCard>
+			</div>
+
+			<!-- Row 2 of values -->
+			<div class="flex gap-14 mt-14">
+				<ValueCard
+					title="Coexist with Earth"
+					description="The Earth is a resource to be managed not exploited.">
+					<Earth />
+				</ValueCard>
+
+				<ValueCard
+					title="Balance"
+					description="We are committed to balancing extraction and conservation.">
+					<Balance />
+				</ValueCard>
+			</div>
+		</div>
+		<Footer />
+	</main>
+
+	<style></style>
+</Layout>
