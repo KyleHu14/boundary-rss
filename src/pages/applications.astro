@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navbar from "../components/Navbar/Navbar.astro"
+import ValueCard from "../components/ValueCard.astro"
+import Earth from "../components/Icons/Earth.astro"
+import Balance from "../components/Icons/Balance.astro"
+import Leaf from "../components/Icons/Leaf.astro"
+import Footer from "../components/Footer/Footer.astro"
+---
+
+<Layout title="Team">
+	<main class="w-screen h-screen bg-black text-white">
+		<!-- Applications -->
+		<div class="w-full h-full text-center">
+			<Navbar />
+			<div
+				class="flex h-[70%] w-full flex-col items-center justify-center">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Applications
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					Learn about our technology and it’s applicability in various
+					industries.
+				</p>
+			</div>
+		</div>
+
+		<!-- Data Overview -->
+		<div class="w-full h-full flex text-black">
+			<div
+				class="flex w-[50%] flex-col items-center justify-center text-center px-10">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Data Overview
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					Our data is comprised of 19 datasets with a total of 200 TB
+					of data. We have also been expanding on various remote
+					sensing techniques / platform types such as :
+					Hyperspectral/SAR/Seismic/Upward Going
+					Muon/Thermal/Multispectral/Magnetic/Gravity/Geochemical/Geoelectric/Electromagnetic/Bathymetric.
+				</p>
+			</div>
+			<img class="object-cover w-[50%]" src="/home/home-2.jpg" />
+		</div>
+
+		<!-- Industry Applications -->
+		<div
+			class="w-full h-full flex text-white bg-black justify-center items-center gap-16">
+			<img
+				class="h-[60%] w-[40%] border-white border"
+				src="/applications/applications-1.jpg"
+			/>
+			<div class="flex w-[50%] flex-col text-left px-10">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Industry Applications
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					Applications for a spectrum of industries of oceanic oil
+					exploration to forestry management, from agricultural
+					sustainability, to mineral prospectivity mapping. 
+					Subsurface imaging has never been more accessible, accurate
+					or applicable See the world beneath our feet and under the
+					waves with a detail and precision never before possible all
+					in advanced 3D visualizations online and in the field.
+				</p>
+			</div>
+		</div>
+
+		<!-- Have an Idea? -->
+		<div
+			class="w-full h-full flex text-black justify-center items-center gap-16">
+			<div class="flex w-[50%] flex-col text-left px-10">
+				<h1 class="text-[5rem] font-['Khand'] font-bold">
+					Have an Idea?
+				</h1>
+				<p class="font-['Roboto'] text-[2rem] font-light">
+					We’re committed to crafting solutions that aren't only the
+					most effective and impactful for your mission but that also
+					uphold our commitment to sustainability. Reach out to us and
+					see if there’s an opportunity to bring our technology to
+					your industry.
+				</p>
+				<button
+					class="mt-10 w-fit bg-zinc-800 text-white font-thin text-2xl font-['Roboto'] p-2 rounded-md"
+					>Contact Us!</button
+				>
+			</div>
+			<img
+				class="h-[60%] border-black border"
+				src="/applications/applications-2.jpg"
+			/>
+		</div>
+
+		<Footer />
+	</main>
+
+	<style></style>
+</Layout>
