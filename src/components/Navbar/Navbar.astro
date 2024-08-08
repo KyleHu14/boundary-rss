@@ -1,13 +1,31 @@
 ---
 import NavLink from "./NavLink.astro"
+import Menu from "../Icons/Menu.astro"
 ---
 
-<nav class="flex justify-center items-center gap-5 pt-8 text-4xl">
-	<!-- Logo -->
-	<!-- <img class="w-10 h-10" src="/logo.png" /> -->
+<nav class="pr-3 pt-3 sm:pt-8 flex">
+	<!-- Mobile Version -->
+	<button id="menu-button" class="sm:hidden mr-0 ml-auto w-12 h-12">
+		<Menu />
+	</button>
 
-	<NavLink text="Home" url="/" />
-	<NavLink text="Team" url="/team" />
-	<NavLink text="Applications" url="/applications" />
-	<NavLink text="Contact" url="/contact" />
+	<div
+		id="nav-links"
+		class="hidden flex right-0 top-0 flex-col sm:flex sm:flex-row sm:w-full sm:items-center sm:justify-center sm:gap-5">
+		<NavLink text="Home" url="/" />
+		<NavLink text="Team" url="/team" />
+		<NavLink text="Applications" url="/applications" />
+		<NavLink text="Contact" url="/contact" />
+	</div>
 </nav>
+
+<script>
+	const menuButton = document.querySelector("#menu-button")
+	const navLinks = document.querySelector("#nav-links")
+
+	if (menuButton && navLinks) {
+		menuButton.addEventListener("click", () => {
+			navLinks.classList.toggle("hidden")
+		})
+	}
+</script>
