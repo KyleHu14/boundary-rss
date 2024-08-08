@@ -3,15 +3,18 @@ import NavLink from "./NavLink.astro"
 import Menu from "../Icons/Menu.astro"
 ---
 
-<nav class="pr-3 pt-3 sm:pt-8 flex">
+<nav
+	class="absolute top-0 right-0 bg-black w-screen h-20 sm:pt-8 flex sm:bg-transparent sm:static">
 	<!-- Mobile Version -->
-	<button id="menu-button" class="sm:hidden mr-0 ml-auto w-12 h-12">
+	<button
+		id="menu-button"
+		class="absolute sm:hidden top-5 right-5 w-12 h-12 text-white">
 		<Menu />
 	</button>
 
 	<div
 		id="nav-links"
-		class="hidden flex absolute text-right right-5 top-12 bg-black flex-col sm:flex sm:flex-row sm:w-full sm:items-center sm:justify-center sm:gap-5">
+		class="absolute right-0 top-16 flex hidden flex-col bg-black text-right p-3 text-white sm:static sm:flex sm:w-full sm:flex-row sm:items-center sm:justify-center sm:gap-5 sm:bg-transparent">
 		<NavLink text="Home" url="/" />
 		<NavLink text="Team" url="/team" />
 		<NavLink text="Applications" url="/applications" />
