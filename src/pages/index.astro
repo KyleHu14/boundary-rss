@@ -114,14 +114,20 @@ import Footer from "../components/Footer/Footer.astro"
 		</section>
 
 		<!-- Where We Are -->
-		<!-- <div class="w-full h-full flex bg-black pr-16">
-			<img class="object-cover w-[50%]" src="/home/home-7.jpg" />
+		<div
+			class="w-full h-full flex flex-col items-center justify-center bg-black gap-3 sm:pr-16 sm:flex-row">
+			<img
+				class="object-cover h-[20rem] sm:w-[50%] sm:h-screen"
+				src="/home/home-7.jpg"
+			/>
 			<div
-				class="flex w-[50%] flex-col justify-center px-10 text-left text-white">
-				<h1 class="text-[5rem] font-['Khand'] font-bold">
+				class="flex flex-col justify-center items-center gap-2 text-left text-white sm:w-[50%] sm:px-10">
+				<h1
+					class="font-['Khand'] font-bold text-center text-4xl sm:text-left sm:text-[5rem]">
 					Where We Are
 				</h1>
-				<p class="font-['Roboto'] text-[2rem] font-light">
+				<p
+					class="font-['Roboto'] text-lg font-light px-5 text-center sm:text-[2rem] sm:px-0">
 					We’re currently servicing the state of California and the
 					world's oceans with plans on expanding to the rest of the
 					United States and beyond soon. Check out our core
@@ -129,11 +135,11 @@ import Footer from "../components/Footer/Footer.astro"
 					you to utilize today.
 				</p>
 				<button
-					class="w-fit bg-zinc-400 font-thin text-2xl font-['Roboto'] p-2 rounded-md"
+					class="w-fit bg-zinc-400 font-thin sm:text-2xl font-['Roboto'] p-2 rounded-md"
 					>Learn More</button
 				>
 			</div>
-		</div> -->
+		</div>
 		<Footer />
 	</main>
 </Layout>
