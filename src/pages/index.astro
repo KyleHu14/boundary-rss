@@ -62,10 +62,12 @@ import Footer from "../components/Footer/Footer.astro"
 			class="text-center font-['Khand'] font-bold mt-10 text-4xl sm:text-[5rem]">
 			What We Bring to The Table
 		</h1>
-		<div class="py-20 flex flex-col gap-16 sm:px-48">
+		<!-- Main Container -->
+		<section class="flex flex-col gap-5 py-5 sm:gap-16 sm:px-48 sm:py-20">
 			<!-- Impressive Visualizations -->
-			<div class="flex items-center gap-10">
-				<div class="w-[50%] h-[20rem]">
+			<div
+				class="flex flex-col items-center gap-2 sm:flex-row sm:gap-10 sm:px-0">
+				<div class="px-5 sm:w-[50%] sm:h-[20rem]">
 					<img
 						class="object-cover w-full h-full"
 						src="/home/home-4.png"
@@ -79,13 +81,14 @@ import Footer from "../components/Footer/Footer.astro"
 			</div>
 
 			<!-- Reliable Partner -->
-			<div class="flex items-center gap-10">
+			<div
+				class="flex flex-col-reverse items-center gap-2 sm:flex-row sm:gap-10 sm:px-0">
 				<TitleDescription
 					title="A Reliable Partner"
 					description="We are a partner you can rely on no matter the mission or use case we have a unique solution precision molded to fit your needs."
 				/>
 
-				<div class="w-[50%] h-[20rem]">
+				<div class="px-5 sm:w-[50%] sm:h-[20rem]">
 					<img
 						class="object-cover w-full h-full"
 						src="/home/home-5.jpg"
@@ -94,8 +97,9 @@ import Footer from "../components/Footer/Footer.astro"
 			</div>
 
 			<!-- Advance AI Integration -->
-			<div class="flex items-center gap-10">
-				<div class="w-[50%] h-[20rem]">
+			<div
+				class="flex flex-col items-center gap-2 sm:flex-row sm:gap-10 sm:px-0">
+				<div class="px-5 sm:w-[50%] sm:h-[20rem]">
 					<img
 						class="object-cover w-full h-full"
 						src="/home/home-6.jpg"
@@ -107,10 +111,10 @@ import Footer from "../components/Footer/Footer.astro"
 					description="Where AI meets subsurface imaging and geo spatial data."
 				/>
 			</div>
-		</div>
+		</section>
 
 		<!-- Where We Are -->
-		<div class="w-full h-full flex bg-black pr-16">
+		<!-- <div class="w-full h-full flex bg-black pr-16">
 			<img class="object-cover w-[50%]" src="/home/home-7.jpg" />
 			<div
 				class="flex w-[50%] flex-col justify-center px-10 text-left text-white">
@@ -129,7 +133,7 @@ import Footer from "../components/Footer/Footer.astro"
 					>Learn More</button
 				>
 			</div>
-		</div>
+		</div> -->
 		<Footer />
 	</main>
 </Layout>

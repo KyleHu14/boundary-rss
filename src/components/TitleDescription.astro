@@ -7,7 +7,7 @@ interface Props {
 const { title, description } = Astro.props
 ---
 
-<div class="text-center font-['Roboto'] w-[50%]">
-	<h1 class="text-[3rem] text-zinc-700">{title}</h1>
-	<p class="text-2xl font-light">{description}</p>
+<div class="px-10 text-center font-['Roboto'] sm:w-[50%]">
+	<h1 class="text-zinc-700 text-2xl sm:text-[3rem]">{title}</h1>
+	<p class="text-med sm:text-2xl font-light">{description}</p>
 </div>
