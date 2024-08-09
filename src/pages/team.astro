@@ -18,8 +18,7 @@ import Footer from "../components/Footer/Footer.astro"
 				<h1 class="font-['Khand'] text-5xl font-bold sm:text-[5rem]">
 					Who We Are
 				</h1>
-				<p
-					class="font-['Roboto'] text-xl font-light sm:mt-[-2rem] sm:text-[3rem]">
+				<p class="font-['Roboto'] text-xl font-light sm:text-[3rem]">
 					Learn who comprises the Boundary RSS team.
 				</p>
 			</div>
@@ -32,7 +31,8 @@ import Footer from "../components/Footer/Footer.astro"
 				<h1 class="text-4xl font-['Khand'] font-bold sm:text-[5rem]">
 					We are...
 				</h1>
-				<p class="text-sm font-['Roboto'] sm:text-[1.5rem] font-light">
+				<p
+					class="px-2 font-['Roboto'] text-sm font-light sm:text-[1.5rem] sm:px-0">
 					a group of 25 developers spread across 5 teams of
 					algorithms, software, mobile application, server
 					development, and data processing.<br /><br /> Our skilled developers,
@@ -47,13 +47,13 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- What we bring to the table -->
 
-		<div class="py-20 px-48 flex flex-col items-center">
+		<div class="flex flex-col items-center py-20 sm:px-48">
 			<h1
-				class="text-center font-['Khand'] text-[4rem] mt-10 font-semibold">
+				class="text-4xl text-center font-['Khand'] font-semibold sm:mt-10 sm:text-[4rem]">
 				Our Core Values
 			</h1>
 			<!-- Row 1 of Values -->
-			<div class="flex gap-14 mt-14">
+			<div class="flex flex-col gap-14 mt-14 sm:flex-row">
 				<ValueCard
 					title="Coexist with Earth"
 					description="The Earth is a resource to be managed not exploited.">
@@ -74,7 +74,7 @@ import Footer from "../components/Footer/Footer.astro"
 			</div>
 
 			<!-- Row 2 of values -->
-			<div class="flex gap-14 mt-14">
+			<div class="flex flex-col gap-14 mt-14 sm:flex-row">
 				<ValueCard
 					title="Coexist with Earth"
 					description="The Earth is a resource to be managed not exploited.">
