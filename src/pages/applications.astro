@@ -1,14 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Navbar from "../components/Navbar/Navbar.astro"
-import ValueCard from "../components/ValueCard.astro"
-import Earth from "../components/Icons/Earth.astro"
-import Balance from "../components/Icons/Balance.astro"
-import Leaf from "../components/Icons/Leaf.astro"
 import Footer from "../components/Footer/Footer.astro"
 ---
 
-<Layout title="Team">
+<Layout title="Boundary RSS | Applications">
 	<main class="w-screen h-screen bg-black text-white">
 		<!-- Applications -->
 		<section class="w-full h-full text-center">
@@ -27,18 +23,20 @@ import Footer from "../components/Footer/Footer.astro"
 		</section>
 
 		<!-- Data Overview -->
-		<section class="w-full h-full flex text-black">
+		<section
+		class="w-full h-full flex text-black">
 			<div
-				class="flex w-[50%] flex-col items-center justify-center text-center px-2 sm:px-10">
-				<h1 class="text-3xl sm:text-[5rem] font-['Khand'] font-bold">
+				class="flex w-[50%] flex-col items-center justify-center gap-5 p-3 sm:p-10 sm:text-left md:p-14">
+				<h1 class="text-center font-['Khand'] text-4xl font-bold sm:text-6xl">
 					Data Overview
 				</h1>
-				<p class="text-sm font-['Roboto'] sm:text-[2rem] font-light">
+				<p class="font-['Roboto'] sm:text-lg lg:text-2xl font-light text-center">
 					Our data is comprised of 19 datasets with a total of 200 TB
 					of data. We have also been expanding on various remote
 					sensing techniques / platform types such as :
-					Hyperspectral/SAR/Seismic/Upward Going
-					Muon/Thermal/Multispectral/Magnetic/Gravity/Geochemical/Geoelectric/Electromagnetic/Bathymetric.
+					Hyperspectral / SAR / Seismic / Upward Going
+					Muon / Thermal / Multispectral / Magnetic / Gravity / Geochemical 
+					/ Geoelectric / Electromagnetic / Bathymetric.
 				</p>
 			</div>
 			<img class="object-cover w-[50%]" src="/home/home-2.jpg" />
@@ -46,7 +44,7 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Industry Applications -->
 		<section
-			class="w-full h-full flex flex-col text-white bg-black justify-center items-center gap-3 sm:gap-16 sm:flex-row px-5">
+			class="flex h-full w-full flex-col items-center justify-center gap-3 bg-black px-5 text-white sm:flex-row sm:gap-16">
 			<img
 				class="sm:h-[60%] sm:w-[40%] border-white border"
 				src="/applications/applications-1.jpg"
