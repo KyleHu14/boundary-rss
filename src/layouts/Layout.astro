@@ -1,6 +1,4 @@
 ---
-import Footer from "../components/Footer/Footer.astro"
-
 interface Props {
 	title: string
 }
@@ -11,12 +9,34 @@ const { title } = Astro.props
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Char Encoding -->
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/png" href="/logo.png" />
-		<meta name="generator" content={Astro.generator} />
+
+		<!-- Website Title & Description -->
 		<title>{title}</title>
+		<meta
+			name="description"
+			content="Boundary will redefine remote sensing data analytics and revolutionize the way subsurface Earth insights are derived from datasets of all types."
+		/>
+
+		<!-- Set website width to device width -->
+		<meta name="viewport" content="width=device-width" />
+
+		<!-- Icon Link -->
+		<link rel="icon" type="image/png" href="/logo.png" />
+
+		<!-- Open Graph Info -->
+		<meta property="og:url" content="https://boundary-rss.vercel.app/" />
+		<meta property="og:title" content={title} />
+		<meta
+			property="og:description"
+			content="Boundary will redefine remote sensing data analytics and revolutionize the way subsurface Earth insights are derived from datasets of all types."
+		/>
+		<meta property="og:site_name" content="Boundary RSS" />
+		<!-- <meta property="og:image" content="http://www.example.com/image.jpg" /> -->
+
+		<!-- Astro Ver -->
+		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
 		<slot />
@@ -26,10 +46,10 @@ const { title } = Astro.props
 	@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 	@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
 
-	input[type=text]{ 
+	input[type="text"] {
 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-		box-sizing: border-box;         /* Opera/IE 8+ */
+		-moz-box-sizing: border-box; /* Firefox, other Gecko */
+		box-sizing: border-box; /* Opera/IE 8+ */
 	}
 
 	html,
