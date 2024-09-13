@@ -45,17 +45,18 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Industry Applications -->
 		<section
-			class="flex h-full w-full flex-col items-center justify-center gap-3 bg-black px-5 text-white md:flex-row sm:gap-10">
+			class="flex h-screen w-screen flex-col items-center justify-center gap-3 overflow-hidden bg-black px-5 py-[20rem] text-white sm:gap-10 md:flex-row md:py-0">
 			<img
-				class="md:h-[60%] md:w-[50%] border-white border"
+				class="h-[150px] md:h-[60%] md:w-[50%] border-white border"
 				src="/applications/applications-1.jpg"
 			/>
 			<div
 				class="flex flex-col text-center sm:text-left sm:px-10 md:w-[50%]">
-				<h1 class="text-4xl sm:text-5xl font-['Khand'] font-bold">
+				<h1 class="text-2xl sm:text-5xl font-['Khand'] font-bold">
 					Industry Applications
 				</h1>
-				<p class="font-['Roboto'] md:text-xl lg:text-2xl font-light">
+				<p
+					class="text-sm font-['Roboto'] md:text-xl lg:text-2xl font-light">
 					Applications for a spectrum of industries of oceanic oil
 					exploration to forestry management, from agricultural
 					sustainability, to mineral prospectivity mapping. 
@@ -69,7 +70,7 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Have an Idea? -->
 		<section
-			class="flex h-full w-full flex-col-reverse items-center justify-center gap-3 px-5 py-16 text-black sm:flex-row sm:gap-16 sm:px-0">
+			class="overflow-hidden flex h-full w-full flex-col-reverse items-center justify-center gap-3 px-5 py-[20rem] text-black sm:flex-row sm:gap-16 sm:px-0 sm:py-16">
 			<div
 				class="flex flex-col items-center text-center sm:pl-9 sm:w-[50%]">
 				<h1
@@ -91,7 +92,7 @@ import Footer from "../components/Footer/Footer.astro"
 			</div>
 
 			<img
-				class="border-black border h-[400px] sm:h-[550px] md:h-[600px]"
+				class="border-black border h-[200px] sm:h-[550px] md:h-[600px]"
 				src="/applications/applications-2.jpg"
 			/>
 		</section>
