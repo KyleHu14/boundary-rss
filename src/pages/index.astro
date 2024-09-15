@@ -8,128 +8,140 @@ import Footer from "../components/Footer/Footer.astro"
 <Layout title="Boundary RSS">
 	<main class="w-screen h-screen">
 		<!-- Main Home Page 1 -->
-		<div
+		<section
 			class="w-full h-full bg-[url('/home/home-1.jpg')] bg-cover bg-center text-center text-white">
 			<Navbar />
 			<div
 				class="flex h-[70%] w-full flex-col items-center justify-center">
-				<h1 class="text-6xl font-['Khand'] font-bold sm:text-[5rem]">
+				<!-- Title -->
+				<h1
+					class="text-3xl font-['Khand'] font-bold xs:text-5xl sm:text-6xl">
 					Boundary RSS
 				</h1>
-				<p class="text-3xl font-['Roboto'] font-light sm:text-4xl">
+
+				<!-- Description -->
+				<p
+					class="text-lg font-['Roboto'] font-light xs:text-2xl sm:text-3xl">
 					Revolutionizing Earth’s subsurface data.
 				</p>
 			</div>
-		</div>
+		</section>
 
 		<!-- Our Mission -->
-		<div class="w-full h-full flex">
+		<section class="w-full h-full flex">
 			<div
 				class="flex w-[50%] flex-col items-center justify-center text-center px-3 sm:px-10">
 				<h1
-					class="font-['Khand'] text-5xl md:text-6xl font-bold 2xl:text-[5rem]">
+					class="font-['Khand'] text-3xl sm:text-4xl md:text-6xl font-bold 2xl:text-5xl">
 					Our Mission
 				</h1>
 				<p
-					class="text-md font-['Roboto'] md:text-xl xl:text-2xl font-light">
+					class="text-sm font-['Roboto'] sm:text-lg md:text-xl xl:text-2xl font-light">
 					Boundary will redefine remote sensing data analytics and
 					revolutionize the way subsurface Earth insights are derived
 					from datasets of all types.
 				</p>
 			</div>
 			<img class="object-cover w-[50%]" src="/home/home-2.jpg" />
-		</div>
+		</section>
 
 		<!-- Our Vision -->
-		<div
-			class="h-full w-full bg-[url('/home/home-3.png')] bg-cover bg-center px-5 pt-40 sm:px-28">
+		<section
+			class="h-full w-full bg-[url('/home/home-3.png')] bg-cover bg-center px-5 py-14 sm:pt-40 sm:px-28">
 			<!-- Text -->
 			<div class="text-white text-center sm:max-w-[40rem]">
 				<h1
-					class="font-['Khand'] text-5xl md:text-6xl font-bold 2xl:text-[5rem] sm:text-left">
+					class="font-['Khand'] text-3xl font-bold sm:text-left sm:text-5xl md:text-6xl 2xl:text-[5rem]">
 					Our Vision
 				</h1>
 				<p
-					class="font-['Roboto'] font-light text-center text-xl md:text-2xl lg:text-[2rem] sm:text-left sm:mt-5">
+					class="font-['Roboto'] text-md font-light sm:mt-5 sm:text-left sm:text-xl md:text-2xl lg:text-[2rem]">
 					We strive to become the dominant world player in geo spatial
 					data analytics within 5 years where geo spatial data can
 					help us not only develop a more sustainable future not only
 					for the surface but the subsurface as well.
 				</p>
 			</div>
-		</div>
+		</section>
 
 		<!-- What we bring to the table -->
-		<h1
-			class="text-center font-['Khand'] font-bold mt-14 text-4xl sm:text-5xl md:text-6xl">
-			What We Bring to The Table
-		</h1>
-		<!-- Main Container -->
-		<section class="flex flex-col gap-5 py-5 sm:gap-16 2xl:px-48 sm:py-20">
-			<!-- Impressive Visualizations -->
-			<div
-				class="flex flex-col items-center gap-2 sm:flex-row lg:gap-10 sm:px-2">
-				<div class="sm:w-[50%] sm:h-[15rem]">
-					<img
-						class="object-cover w-full h-full"
-						src="/home/home-4.png"
+		<section>
+			<h1
+				class="text-center font-['Khand'] font-bold mt-14 text-3xl xs:text-4xl sm:text-5xl md:text-6xl">
+				What We Bring to The Table
+			</h1>
+
+			<!-- Main Container -->
+			<section
+				class="flex flex-col gap-5 py-5 sm:gap-16 2xl:px-48 sm:py-20">
+				<!-- Impressive Visualizations -->
+				<div
+					class="flex flex-col items-center gap-2 sm:flex-row lg:gap-10">
+					<div class="px-5 sm:w-[50%] sm:h-[15rem]">
+						<img
+							class="object-cover w-full h-full"
+							src="/home/home-4.png"
+						/>
+					</div>
+
+					<TitleDescription
+						title="Impressive Visualizations"
+						description="Digital twins and 3D visualizations of your AOI that will provide immersive insights like never before."
 					/>
 				</div>
 
-				<TitleDescription
-					title="Impressive Visualizations"
-					description="Digital twins and 3D visualizations of your AOI that will provide immersive insights like never before."
-				/>
-			</div>
-
-			<!-- Reliable Partner -->
-			<div
-				class="flex flex-col-reverse items-center gap-2 sm:flex-row lg:gap-10 sm:px-0">
-				<TitleDescription
-					title="A Reliable Partner"
-					description="We are a partner you can rely on no matter the mission or use case we have a unique solution precision molded to fit your needs."
-				/>
-
-				<div class="px-5 sm:w-[50%] sm:h-[20rem]">
-					<img
-						class="object-cover w-full h-full"
-						src="/home/home-5.jpg"
+				<!-- Reliable Partner -->
+				<div
+					class="flex flex-col-reverse items-center gap-2 sm:flex-row lg:gap-10 sm:px-0">
+					<TitleDescription
+						title="A Reliable Partner"
+						description="We are a partner you can rely on no matter the mission or use case we have a unique solution precision molded to fit your needs."
 					/>
-				</div>
-			</div>
 
-			<!-- Advance AI Integration -->
-			<div
-				class="flex flex-col items-center gap-2 sm:flex-row lg:gap-10 sm:px-0">
-				<div class="px-5 sm:w-[50%] sm:h-[20rem]">
-					<img
-						class="object-cover w-full h-full"
-						src="/home/home-6.jpg"
-					/>
+					<div class="px-5 sm:w-[50%] sm:h-[20rem]">
+						<img
+							class="object-cover w-full h-full"
+							src="/home/home-5.jpg"
+						/>
+					</div>
 				</div>
 
-				<TitleDescription
-					title="Advanced AI Integration"
-					description="Where AI meets subsurface imaging and geo spatial data."
-				/>
-			</div>
+				<!-- Advance AI Integration -->
+				<div
+					class="flex flex-col items-center gap-2 sm:flex-row lg:gap-10 sm:px-0">
+					<div class="px-5 sm:w-[50%] sm:h-[20rem]">
+						<img
+							class="object-cover w-full h-full"
+							src="/home/home-6.jpg"
+						/>
+					</div>
+
+					<TitleDescription
+						title="Advanced AI Integration"
+						description="Where AI meets subsurface imaging and geo spatial data."
+					/>
+				</div>
+			</section>
 		</section>
 
 		<!-- Where We Are -->
-		<div
-			class="overflow-hidden w-full flex flex-col items-center justify-center py-28 bg-black gap-3 sm:pr-16 sm:flex-row">
+		<section
+			class="overflow-hidden w-full flex flex-col items-center justify-center py-16 bg-black gap-3 sm:pr-4 sm:flex-row sm:py-0">
+			<!-- Where We Are Image -->
 			<img
 				class="object-cover h-[220px] sm:w-[50%] sm:h-screen"
 				src="/home/home-7.jpg"
 			/>
+
+			<!-- Where We Are Text -->
 			<div
-				class="flex flex-col justify-center items-center gap-2 text-left text-white sm:w-[50%] sm:px-10">
+				class="flex flex-col items-center gap-2 text-center text-white sm:w-[50%] sm:px-10 sm:text-left sm:items-stretch">
 				<h1
-					class="font-['Khand'] font-bold text-center text-3xl sm:text-left sm:text-5xl lg:text-6xl">
+					class="w-full font-['Khand'] text-3xl font-bold xs:text-4xl sm:text-5xl lg:text-6xl">
 					Where We Are
 				</h1>
 				<p
-					class="font-['Roboto'] text-sm font-light px-5 text-center sm:text-xl lg:text-2xl sm:px-0">
+					class="px-5 font-['Roboto'] text-sm font-light sm:px-0 xs:text-lg lg:text-2xl">
 					We’re currently servicing the state of California and the
 					world's oceans with plans on expanding to the rest of the
 					United States and beyond soon. Check out our core
@@ -138,11 +150,11 @@ import Footer from "../components/Footer/Footer.astro"
 				</p>
 				<a
 					href="/applications"
-					class="w-fit bg-zinc-500 font-thin sm:text-2xl font-['Roboto'] p-2 rounded-md"
+					class="w-fit rounded-md bg-zinc-100 p-2 font-['Roboto'] text-black sm:text-xl"
 					>Learn More</a
 				>
 			</div>
-		</div>
+		</section>
 		<Footer />
 	</main>
 </Layout>
