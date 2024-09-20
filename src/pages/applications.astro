@@ -23,15 +23,15 @@ import Footer from "../components/Footer/Footer.astro"
 		</section>
 
 		<!-- Data Overview -->
-		<section class="w-full h-full flex text-black">
+		<section class="w-full flex text-black sm:h-full">
 			<div
-				class="flex w-[50%] flex-col items-center justify-center px-3 sm:gap-5 sm:text-left md:p-14">
+				class="flex w-[50%] flex-col items-center justify-center p-1 sm:gap-5 sm:text-left xs:p-3 sm:p-5 md:p-14">
 				<h1
-					class="text-center font-['Khand'] text-2xl sm:text-4xl font-bold md:text-6xl">
+					class="font-['Khand'] text-xl font-bold xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl">
 					Data Overview
 				</h1>
 				<p
-					class="font-['Roboto'] text-sm sm:text-lg lg:text-2xl font-light text-center">
+					class="px-2 text-center font-['Roboto'] text-xs font-light xs:text-sm sm:px-0 sm:text-base lg:text-xl xl:text-2xl">
 					Our data is comprised of 19 datasets with a total of 200 TB
 					of data. We have also been expanding on various remote
 					sensing techniques / platform types such as : Hyperspectral
@@ -45,18 +45,19 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Industry Applications -->
 		<section
-			class="flex h-screen w-screen flex-col items-center justify-center gap-3 overflow-hidden bg-black px-5 py-[20rem] text-white sm:gap-10 md:flex-row md:py-0">
+			class="flex lg:h-screen w-screen flex-col items-center justify-center gap-3 overflow-hidden bg-black px-5 py-[20rem] text-white sm:gap-10 md:flex-row md:py-0">
 			<img
 				class="h-[150px] md:h-[60%] md:w-[50%] border-white border"
 				src="/applications/applications-1.jpg"
 			/>
 			<div
-				class="flex flex-col text-center sm:text-left sm:px-10 md:w-[50%]">
-				<h1 class="text-2xl sm:text-5xl font-['Khand'] font-bold">
+				class="flex flex-col text-center sm:px-10 md:w-[50%] md:text-left md:py-10">
+				<h1
+					class="text-2xl xs:text-4xl lg:text-5xl 2xl:text-7xl font-['Khand'] font-bold">
 					Industry Applications
 				</h1>
 				<p
-					class="text-sm font-['Roboto'] md:text-xl lg:text-2xl font-light">
+					class="text-sm font-['Roboto'] font-light xs:text-lg lg:text-2xl 2xl:text-3xl">
 					Applications for a spectrum of industries of oceanic oil
 					exploration to forestry management, from agricultural
 					sustainability, to mineral prospectivity mapping. 
@@ -100,6 +101,4 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<Footer />
 	</main>
-
-	<style></style>
 </Layout>

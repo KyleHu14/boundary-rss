@@ -14,28 +14,29 @@ import Footer from "../components/Footer/Footer.astro"
 		<div class="w-full h-full text-center text-black">
 			<Navbar />
 			<div
-				class="px-1 flex h-[70%] w-full flex-col items-center justify-center pt-[50%] sm:px-0 sm:pt-0">
+				class="px-1 flex h-[70%] w-full flex-col items-center justify-center pt-[45%] sm:px-0 sm:pt-0">
 				<h1
-					class="font-['Khand'] text-5xl font-bold sm:text-6xl lg:text-7xl">
+					class="font-['Khand'] text-4xl font-bold xs:text-5xl sm:text-6xl lg:text-7xl">
 					Who We Are
 				</h1>
 				<p
-					class="font-['Roboto'] text-xl font-light sm:text-2xl lg:text-4xl">
+					class="font-['Roboto'] text-md font-light xs:text-xl sm:text-2xl lg:text-4xl">
 					Learn who comprises the Boundary RSS team.
 				</p>
 			</div>
 		</div>
 
 		<!-- Who We Are -->
-		<div class="w-full h-full flex bg-black">
+		<!-- Height is not full in order to make text fit the height -->
+		<div class="w-full flex bg-black lg:h-full">
 			<div
-				class="text-center flex w-[50%] flex-col text-white justify-center sm:px-20 sm:pt-36 sm:text-left">
+				class="flex w-[50%] flex-col justify-center text-center text-white py-5 sm:px-5 lg:px-14 sm:py-0 sm:text-left">
 				<h1
-					class="text-4xl font-['Khand'] font-bold sm:text-5xl lg:text-7xl">
+					class="text-xl font-['Khand'] font-bold xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl">
 					We are...
 				</h1>
 				<p
-					class="px-2 font-['Roboto'] text-sm font-light sm:text-md lg:text-xl sm:px-0">
+					class="text-xs font-['Roboto'] font-light px-2 sm:px-0 xs:text-sm sm:text-base lg:text-xl xl:text-2xl">
 					a group of 25 developers spread across 5 teams of
 					algorithms, software, mobile application, server
 					development, and data processing.<br /><br /> Our skilled developers,
