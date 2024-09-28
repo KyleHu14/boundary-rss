@@ -28,24 +28,34 @@ import FounderTitleDescription from "../components/FounderTitleDescription.astro
 		</section>
 
 		<!-- Founders Section -->
-		<section class="flex 2xl:h-5/6 flex-col items-center justify-center gap-12 py-24 text-black 2xl:py-20">
+		<section
+			class="flex 2xl:h-5/6 flex-col items-center justify-center gap-5 py-12 text-black 2xl:py-20">
 			<!-- Title -->
-			<h1 class="font-['Khand'] font-semibold text-4xl text2xl:text-7xl">Our Founders</h1>
+			<h1 class="font-['Khand'] font-semibold text-4xl sm:text-5xl">
+				Our Founders
+			</h1>
 
 			<!-- Images of Founders -->
-			<div class="flex flex-col items-center justify-center gap-16 md:flex-row">
+			<div
+				class="flex flex-col items-center justify-center gap-10 md:flex-row">
 				<!-- CEO -->
 				<div class="flex flex-col justify-center items-center">
-					<img class="w-[170px] h-[230px] md:w-[350px] md:h-[460px]" src="/team/ceo.jpg" />
+					<img
+						class="w-[170px] h-[230px] sm:w-[190px] sm:h-[250px] md:w-[230px] md:h-[310px] lg:w-[350px] lg:h-[460px]"
+						src="/team/ceo.jpg"
+					/>
 					<FounderTitleDescription
 						title="Holden Nash - Founder/CEO"
 						description="Paving the way for our innovation and development."
 					/>
-				</div>	
-	
+				</div>
+
 				<!-- CMO -->
 				<div class="flex flex-col justify-center items-center">
-					<img class="w-[170px] h-[230px] md:w-[350px] md:h-[460px]" src="/team/cmo.jpg" />
+					<img
+						class="w-[170px] h-[230px] sm:w-[190px] sm:h-[250px] md:w-[230px] md:h-[310px] lg:w-[350px] lg:h-[460px]"
+						src="/team/cmo.jpg"
+					/>
 					<FounderTitleDescription
 						title="Roberto Smith - Co-Founder/CMO"
 						description="Forging partnerships and crafting our companies"
