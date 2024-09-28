@@ -10,7 +10,7 @@ import Footer from "../components/Footer/Footer.astro"
 		<section class="w-full h-full text-center">
 			<Navbar />
 			<div
-				class="flex h-[70%] w-full flex-col items-center justify-center pt-[8rem]">
+				class="flex h-[70%] w-full flex-col items-center justify-center">
 				<h1 class="text-4xl font-['Khand'] font-bold sm:text-[5rem]">
 					Applications
 				</h1>
@@ -23,21 +23,20 @@ import Footer from "../components/Footer/Footer.astro"
 		</section>
 
 		<!-- Data Overview -->
-		<section class="w-full flex text-black sm:h-full">
+		<section
+		class="w-full h-full flex text-black">
 			<div
-				class="flex w-[50%] flex-col items-center justify-center p-1 sm:gap-5 sm:text-left xs:p-3 sm:p-5 md:p-14">
-				<h1
-					class="font-['Khand'] text-xl font-bold xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-8xl">
+				class="flex w-[50%] flex-col items-center justify-center p-3 sm:gap-5 sm:p-10 sm:text-left md:p-14">
+				<h1 class="text-center font-['Khand'] text-3xl sm:text-4xl font-bold md:text-6xl">
 					Data Overview
 				</h1>
-				<p
-					class="px-2 text-center font-['Roboto'] text-xs font-light xs:text-sm sm:px-0 sm:text-base lg:text-xl xl:text-2xl">
+				<p class="font-['Roboto'] sm:text-lg lg:text-2xl font-light text-center">
 					Our data is comprised of 19 datasets with a total of 200 TB
 					of data. We have also been expanding on various remote
-					sensing techniques / platform types such as : Hyperspectral
-					/ SAR / Seismic / Upward Going Muon / Thermal /
-					Multispectral / Magnetic / Gravity / Geochemical /
-					Geoelectric / Electromagnetic / Bathymetric.
+					sensing techniques / platform types such as :
+					Hyperspectral / SAR / Seismic / Upward Going
+					Muon / Thermal / Multispectral / Magnetic / Gravity / Geochemical 
+					/ Geoelectric / Electromagnetic / Bathymetric.
 				</p>
 			</div>
 			<img class="object-cover w-[50%]" src="/home/home-2.jpg" />
@@ -45,19 +44,17 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Industry Applications -->
 		<section
-			class="flex lg:h-screen w-screen flex-col items-center justify-center gap-3 overflow-hidden bg-black px-5 py-[20rem] text-white sm:gap-10 md:flex-row md:py-0">
+			class="flex h-full w-full flex-col items-center justify-center gap-3 bg-black px-5 text-white sm:flex-row sm:gap-16">
 			<img
-				class="h-[150px] md:h-[60%] md:w-[50%] border-white border"
+				class="sm:h-[60%] sm:w-[40%] border-white border"
 				src="/applications/applications-1.jpg"
 			/>
 			<div
-				class="flex flex-col text-center sm:px-10 md:w-[50%] md:text-left md:py-10">
-				<h1
-					class="text-2xl xs:text-4xl lg:text-5xl 2xl:text-7xl font-['Khand'] font-bold">
+				class="flex flex-col text-center sm:text-left sm:px-10 sm:w-[50%]">
+				<h1 class="text-4xl sm:text-5xl font-['Khand'] font-bold">
 					Industry Applications
 				</h1>
-				<p
-					class="text-sm font-['Roboto'] font-light xs:text-lg lg:text-2xl 2xl:text-3xl">
+				<p class="font-['Roboto'] md:text-xl lg:text-2xl font-light">
 					Applications for a spectrum of industries of oceanic oil
 					exploration to forestry management, from agricultural
 					sustainability, to mineral prospectivity mapping. 
@@ -71,15 +68,13 @@ import Footer from "../components/Footer/Footer.astro"
 
 		<!-- Have an Idea? -->
 		<section
-			class="overflow-hidden flex h-full w-full flex-col-reverse items-center justify-center gap-3 px-5 py-[20rem] text-black sm:flex-row sm:gap-16 sm:px-0 sm:py-16">
+			class="flex h-full w-full flex-col-reverse items-center justify-center gap-3 px-5 text-black sm:flex-row sm:gap-16 sm:px-0">
 			<div
 				class="flex flex-col items-center text-center sm:pl-9 sm:w-[50%]">
-				<h1
-					class="font-['Khand'] text-4xl font-bold md:text-5xl lg:text-6xl">
+				<h1 class="font-['Khand'] text-4xl font-bold md:text-5xl lg:text-6xl">
 					Have an Idea?
 				</h1>
-				<p
-					class="font-['Roboto'] font-light text-sm sm:text-xl lg:text-2xl">
+				<p class="font-['Roboto'] font-light sm:text-xl lg:text-2xl">
 					We’re committed to crafting solutions that aren't only the
 					most effective and impactful for your mission but that also
 					uphold our commitment to sustainability. Reach out to us and
@@ -87,18 +82,19 @@ import Footer from "../components/Footer/Footer.astro"
 					your industry.
 				</p>
 				<a
-					href="/contact"
-					class="mt-3 w-fit rounded-md bg-zinc-800 p-2 font-['Roboto'] text-sm md:text-2xl font-thin text-white sm:mt-10"
+					href="/contact" class="mt-3 w-fit rounded-md bg-zinc-800 p-2 font-['Roboto'] text-2xl font-thin text-white sm:mt-10"
 					>Contact Us!</a
 				>
 			</div>
 
 			<img
-				class="border-black border h-[220px] sm:h-[550px] md:h-[600px]"
+				class="border-black border max-h-96 sm:w-[50%] sm:max-h-full"
 				src="/applications/applications-2.jpg"
 			/>
 		</section>
 
 		<Footer />
 	</main>
+
+	<style></style>
 </Layout>

@@ -12,7 +12,7 @@ import FounderTitleDescription from "../components/FounderTitleDescription.astro
 <Layout title="Boundary RSS | Team">
 	<main class="w-screen h-screen">
 		<!-- Team Page -->
-		<section class="w-full h-full text-center text-black">
+		<section class="w-full h-full text-center text-white bg-black">
 			<Navbar />
 			<div
 				class="px-1 flex h-[70%] w-full flex-col items-center justify-center pt-[45%] sm:px-0 sm:pt-0">
@@ -28,21 +28,29 @@ import FounderTitleDescription from "../components/FounderTitleDescription.astro
 		</section>
 
 		<!-- Founders Section -->
-		<section class="flex">
-			<div>
-				<img class="w-[204px] h-[234px]" src="/team/ceo.jpg" />
-				<FounderTitleDescription
-					title="Holden Nash - Founder/CEO"
-					description="Paving the way for our innovation and development."
-				/>
-			</div>
+		<section class="flex 2xl:h-5/6 flex-col items-center justify-center gap-12 py-24 text-black 2xl:py-20">
+			<!-- Title -->
+			<h1 class="font-['Khand'] font-semibold text-4xl text2xl:text-7xl">Our Founders</h1>
 
-			<div>
-				<img class="w-[204px] h-[234px]" src="/team/cmo.jpg" />
-				<FounderTitleDescription
-					title="Roberto Smith - Co-Founder/CMO"
-					description="Forging partnerships and crafting our companies"
-				/>
+			<!-- Images of Founders -->
+			<div class="flex flex-col items-center justify-center gap-16 md:flex-row">
+				<!-- CEO -->
+				<div class="flex flex-col justify-center items-center">
+					<img class="w-[170px] h-[230px] md:w-[350px] md:h-[460px]" src="/team/ceo.jpg" />
+					<FounderTitleDescription
+						title="Holden Nash - Founder/CEO"
+						description="Paving the way for our innovation and development."
+					/>
+				</div>	
+	
+				<!-- CMO -->
+				<div class="flex flex-col justify-center items-center">
+					<img class="w-[170px] h-[230px] md:w-[350px] md:h-[460px]" src="/team/cmo.jpg" />
+					<FounderTitleDescription
+						title="Roberto Smith - Co-Founder/CMO"
+						description="Forging partnerships and crafting our companies"
+					/>
+				</div>
 			</div>
 		</section>
 
