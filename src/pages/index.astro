@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro"
 import Navbar from "../components/Navbar/Navbar.astro"
 import TitleDescription from "../components/TitleDescription.astro"
 import Footer from "../components/Footer/Footer.astro"
+import HomeVideo from "../components/HomeVideo.astro"
 ---
 
 <Layout title="Boundary RSS">
@@ -28,24 +29,13 @@ import Footer from "../components/Footer/Footer.astro"
 		</section>
 
 		<section
-			class="flex flex-col justify-center items-center w-screen md:h-screen py-5 sm:p-10 md:p-16 gap-4">
+			class="w-full h-full flex flex-col items-center justify-center">
 			<h1
 				class="text-3xl font-['Khand'] md:text-5xl lg:text-7xl font-semibold">
 				Discover Boundary
 			</h1>
-			<div
-				class="flex h-[15rem] w-full xs:w-[90%] xs:h-[17rem] sm:h-[20rem] md:h-[35rem] lg:h-[50rem]">
-				<iframe
-					class="grow"
-					src="https://www.youtube.com/embed/vutJuPW9aPo?autoplay=1&mute=1"
-					title="YouTube video player"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen></iframe>
-			</div>
+			<HomeVideo />
 		</section>
-
 		<!-- Our Mission -->
 		<section class="w-full h-full flex">
 			<div
@@ -178,3 +168,74 @@ import Footer from "../components/Footer/Footer.astro"
 		<Footer />
 	</main>
 </Layout>
+
+<style>
+	/* Ensure the iframe does not capture pointer events */
+	#player iframe {
+		pointer-events: none;
+	}
+</style>
+
+<script is:inline>
+	var tag = document.createElement("script")
+	tag.src = "https://www.youtube.com/iframe_api"
+	var firstScriptTag = document.getElementsByTagName("script")[0]
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag)
+
+	var player
+
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player("player", {
+			width: "100%",
+			height: "100%",
+			videoId: "vutJuPW9aPo",
+			playerVars: {
+				autoplay: 1,
+				controls: 0,
+				mute: 1,
+				fs: 0,
+				modestbranding: 1,
+				rel: 0,
+				playsinline: 1,
+			},
+			events: {
+				onReady: onPlayerReady,
+				onStateChange: onPlayerStateChange,
+			},
+		})
+	}
+
+	function onPlayerReady(event) {
+		event.target.playVideo()
+
+		// Set pointer-events to 'none' on the iframe to allow clicks to pass through
+		var iframe = event.target.getIframe()
+		iframe.style.pointerEvents = "none"
+	}
+
+	function onPlayerStateChange(event) {}
+
+	function stopVideo() {
+		player.stopVideo()
+	}
+
+	document
+		.getElementById("overlay-button")
+		.addEventListener("click", function () {
+			player.seekTo(0)
+			player.unMute()
+			var iframe = document.querySelector("#player")
+			if (iframe.requestFullscreen) {
+				iframe.requestFullscreen()
+			} else if (iframe.mozRequestFullScreen) {
+				/* Firefox */
+				iframe.mozRequestFullScreen()
+			} else if (iframe.webkitRequestFullscreen) {
+				/* Chrome, Safari & Opera */
+				iframe.webkitRequestFullscreen()
+			} else if (iframe.msRequestFullscreen) {
+				/* IE/Edge */
+				iframe.msRequestFullscreen()
+			}
+		})
+</script>
